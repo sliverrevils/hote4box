@@ -1,0 +1,20 @@
+.profileLayoutWrap{    
+    display: flex;
+    flex-direction: column;
+    gap: 40;
+    height: 100%;
+    .headerBlock{
+        display: flex;
+        flex-direction: column;
+        gap:56px;
+        padding-bottom: 22px;
+        border-bottom: 1px solid #CDD2DE;
+    .title{
+        font-size: 40px;
+        font-weight: 600;
+        letter-spacing: -1.5px;
+    }
+}
+    
+
+}

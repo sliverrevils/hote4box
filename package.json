@@ -1,0 +1,30 @@
+{
+  "name": "hotel4box",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "jose": "^6.0.11",
+    "libphonenumber-js": "^1.12.10",
+    "mongoose": "^8.16.3",
+    "next": "15.3.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-input-mask": "^2.0.4",
+    "react-phone-input-2": "^2.15.1",
+    "sass": "^1.89.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/react-input-mask": "^3.0.6",
+    "typescript": "^5"
+  }
+}

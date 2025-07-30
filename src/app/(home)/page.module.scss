@@ -1,0 +1,475 @@
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 180px;
+    padding-bottom: 40px;
+    .topContetnt{
+        padding: 0px var(--containerMarginSmall);    
+    }  
+
+    .otherContent{
+    padding: 0px var(--containerMarginBig);
+}   
+
+}
+
+.topBlock{
+    display: flex;
+    flex-direction: column;
+    
+    .firstLine{
+        display: flex;
+        justify-content: space-between;
+        font-size: 56px;
+        font-weight: 600;
+         letter-spacing: -2px;
+        
+
+        .infoBlock{
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            
+
+            .firstTextBlock{                
+                display: flex;
+                flex-direction: column;
+                
+                &>:nth-child(2){                    
+                    display: flex;
+                    align-items: center;
+                    
+                }
+                &>:nth-child(3){                    
+                    display: flex;
+                    align-items: center;
+                    
+                   
+                    
+                }
+            }
+
+            .secondTextBlock{
+                display: flex;
+                flex-direction: column;
+                font-size: 21px;
+                font-weight: 400;
+                color: var(--f_blue-500);
+                 letter-spacing: -0px;
+            }
+            
+        }
+
+
+    }
+    .secondLine{
+        display: flex;
+        gap: 24px;
+
+    }
+}
+
+
+
+.howWorkBlock{    
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    .firstBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+
+        &>:nth-child(1){
+
+        }
+
+        &>:nth-child(2){
+            text-align: center;
+            font-size: 21px;
+            font-weight: 400;
+            color: var(--f_blue-500);
+        }
+    }
+
+    .stepsListBlock{
+        display: flex;
+        gap: 24px;
+        .stepItem{
+            height: 544px;
+            padding: 48px;
+            border-radius: 48px;
+            width: 25%;
+            background: var(--f_gray-50);
+            display: flex;
+            flex-direction: column;
+            
+            &>:nth-child(1){
+                height: 50%;
+            }
+            &>:nth-child(2){                
+                flex: 1;               
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: flex-start;
+
+                &>:nth-child(1){                    
+                    background: var(--background);
+                    padding: 12px 16px;
+                    border-radius: 12px;
+                    color: var(--f_blue-500);
+                    
+                }
+                &>:nth-child(2){
+                    font-size: 32px;
+                    font-weight: 600;
+                    color: var(--f_blue-950);
+                    letter-spacing: -2px;
+                    
+                }
+                &>:nth-child(3){
+                    font-size: 21px;
+                    font-weight: 400;
+                    color: var(--f_blue-500);
+                    width: 95%;
+                    
+                    
+                }
+                
+            }
+        }
+
+    }
+
+    .categoriesBlock{
+        
+        align-self: center;
+        padding: 8px;
+        background: var(--f_gray-50);
+        display: flex;
+        gap: 2px;
+        border-radius: 16px;
+
+        &>*{
+            
+            border-radius: 12;
+            display: flex;
+            gap: 8px;
+            align-items: center;
+            padding: 16px;
+           
+        }
+        &>:nth-child(1){
+            background: var(--background);
+            &>*{
+                color: var(--f_accent);
+            }
+            
+        }
+        
+    }
+
+    .shopsBlock{
+        display: flex;
+        justify-content: flex-start;
+        
+        
+        flex-wrap: wrap;
+        gap: 24px;
+        &>*{
+            
+            background: var(--f_gray-50);
+            padding: 10px;
+            border-radius: 48px;
+            margin: auto;
+        }
+    }
+
+    
+}
+
+.advantagesBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    .title{
+        font-size: 48px;
+        font-weight: 600;
+        line-height: 105%;
+        color: var(--f_blue-950);
+        letter-spacing: -2px;
+
+
+    }
+    .cardsBlock1{
+        display: flex;
+        gap: 24px;        
+
+        .leftBlock{
+            width: 100%;             
+            .first{
+                display: flex;
+                gap: 48px;
+                &>:nth-child(1){                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    gap: 24px;
+                    &>:nth-child(1){
+                        font-size: 32px;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                    }
+                    &>:nth-child(2){
+                        font-size: 21px;
+                        font-weight: 400;
+                        letter-spacing: -1px;
+                        color: var(--f_blue-500);
+                    }                    
+                }
+            }
+        }
+        .rightBlock{
+            width: 100%;               
+            .first{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                &>:first-child{                    
+                    &>:nth-child(2){
+                        font-size: 60px;
+                        font-weight: 600;
+                        letter-spacing: -1.5px;
+                    }
+                }
+
+                &>:nth-child(2){
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    &>:nth-child(1){
+                        font-size: 32px;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                    }
+                    &>:nth-child(2){
+                        font-size: 21px;
+                        font-weight: 400;
+                        letter-spacing: -1px;
+                        line-height: 135%;
+                        color: var(--f_blue-500);
+                    }
+                }
+            }             
+        }
+    }
+    .cardsBlock2{
+        display: flex;
+        gap: 24px;   
+        position: relative;     
+
+
+        .leftBlock{
+            width: 100%;  
+            max-width: 49.5%;    
+                 
+            .first{
+                display: flex;
+                flex-direction: column;
+                gap: 48px;
+                &>:nth-child(1){                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+                    gap: 24px;
+                    &>:nth-child(1){
+                        font-size: 32px;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                    }
+                    &>:nth-child(2){
+                        font-size: 21px;
+                        font-weight: 400;
+                        letter-spacing: -1px;
+                        color: var(--f_blue-500);
+                    }                    
+                }
+            }
+            img{                
+                margin-left: -48px;
+                margin-bottom: -48px;                
+            }
+        }
+        .rightBlock{
+            width: 100%;  
+            display: flex;    
+            flex-direction: column;   
+            gap:24px ;      
+            .first{
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                max-height: 448px;
+               
+
+                &>:nth-child(1){
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    &>:nth-child(1){
+                        font-size: 32px;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                    }
+                    &>:nth-child(2){
+                        font-size: 21px;
+                        font-weight: 400;
+                        letter-spacing: -1px;
+                        line-height: 135%;
+                        color: var(--f_blue-500);
+                    }
+                }
+
+                img{
+                    width: 100%;
+                    height: auto;
+                    
+                }
+            }             
+            .second{
+               
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                max-height: 448px;
+                overflow: hidden;
+               
+
+                &>:nth-child(1){
+                    display: flex;
+                    flex-direction: column;
+                    gap: 24px;
+                    &>:nth-child(1){
+                        font-size: 32px;
+                        font-weight: 600;
+                        letter-spacing: -1px;
+                    }
+                    &>:nth-child(2){
+                        font-size: 21px;
+                        font-weight: 400;
+                        letter-spacing: -1px;
+                        line-height: 135%;
+                        color: var(--f_blue-500);
+                    }
+                }
+
+                img{
+                    position: absolute;
+                    bottom: 0px;
+                    right: 0px; 
+                }
+            }             
+        }
+    }
+    .cardItem{
+        
+    background: var(--f_gray-50);
+    border-radius: 48px;
+    padding: 48px;
+    overflow: hidden;
+}
+}
+
+.commsPock{
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+    // .title{
+    //     font-size: 48px;
+    //     letter-spacing: -2px;
+    //     font-weight: 600;
+    // }
+    .commsList{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        
+        .commItem{
+            background: var(--f_gray-50);
+            padding: 48px;
+            border-radius: 48px;           
+            width: 100%;
+            max-width: 49%;
+            display: flex;
+            flex-direction: column;
+
+            .comtopBlock{               
+                display: flex;
+                justify-content: space-between;
+
+                .starsBlock{
+                    display: flex;
+                    gap: 12px;
+                }
+            }
+            .combottomBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 24px;               
+            }
+        }
+    }
+}
+
+.lastBlock{
+    background: var(--f_gray-50);
+    border-radius: 48px;
+    display: flex;
+    &>:first-child{
+        padding: 48px;
+        flex: 1;
+        display: flex;        
+        flex-direction: column;
+        justify-content: center;
+        &>:first-child{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        // &>:nth-child(1){           
+        //     font-weight: 600;
+        //     font-size: 48px;
+        //     line-height: 105%;
+        //     letter-spacing: -2px;
+        // }
+        &>:nth-child(2){           
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 135%;
+            letter-spacing: 0px;
+        }
+        &>:nth-child(3){   
+            padding: 18.5px 32px;
+            align-self: flex-start;
+            color: var(--background);
+            background: var(--f_accent);        
+            font-weight: 400;
+            font-size: 21px;
+            line-height: 135%;
+            letter-spacing: 0px;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+    }
+    }
+
+
+}
+

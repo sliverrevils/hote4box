@@ -1,0 +1,107 @@
+.branchesMainLayoutWrap{
+    
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .topMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #CDD2DE;
+            .mainText{
+                font-size: 40px;
+                line-height: 105%;
+                letter-spacing: -3%;
+                font-weight: 600;
+                color: var(--f_blue-950);
+            }
+
+            .countryBox{
+                display: flex;
+                
+                .country{
+                    display: flex;
+                    align-items: center;
+                    background: var(--f_gray-50) ;
+                    padding: 12px 16px;
+                    border-radius: 12px;
+                    
+                    .title{
+                        color: var(--f_accent);
+                        font-size: 18px;
+                        font-weight: 500;
+                    }
+                }
+            }
+    }
+
+    .branchesContent{
+        padding: 30px 0px;
+        
+        .branchesList{ 
+            display: flex;
+            gap: 24px;
+            flex-wrap: wrap;            
+            .branchItem{
+                width: 32%;
+                max-width: 488px;
+                padding: 32px;
+                border-radius: 24px;
+                background: var(--f_gray-30);
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+                .firstBlock{
+                    display: flex;
+                    justify-content: space-between;
+                    .title{
+                        font-size: 24px;
+                        font-weight: 600;
+                    }
+                    .timeBlock{
+                        display: flex;
+                        align-items: center;
+
+                        .period{
+                            font-size: 18px;
+                            font-weight: 500;
+                            color: var(--f_accent);
+                        }
+                    }
+                }
+                .paramsBlock{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 12px;
+
+                    .paramItem{
+                        display: flex;
+                          
+                                              
+                        
+                        &>:first-child{
+                            
+                            width: 40%;
+                            color: var(--f_blue-500);                            
+                        }
+                        &>:nth-child(2){
+                            
+                            
+                            flex: 1;
+                            
+                        }
+                    }
+
+                    .line{
+                        border-bottom: 1px solid #CDD2DE; 
+                    }
+                }
+            }
+        }
+    }
+
+
+    
+}

@@ -1,0 +1,323 @@
+.OrderMainLayoutWrap{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+
+    .topMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #CDD2DE;
+
+        .firstBlock{
+            display: flex;
+            justify-content: space-between;
+
+            .mainText{
+                font-size: 40px;
+                line-height: 105%;
+                letter-spacing: -3%;
+                font-weight: 600;
+                color: var(--f_blue-950);
+            }
+
+            .ordersControl{
+                display: flex;
+                gap: 8px;
+
+                .btn{
+                    display: flex;
+                    align-items: center;
+                    color: var(--f_accent);
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 130%;
+                    padding: 11.5px 24px;
+                    border: 1px solid var(--f_accent);
+                    border-radius: 40px;
+                    cursor: pointer;
+
+                }
+
+                .btn_selected{
+                    background: var(--f_accent);
+                    color: var(--background);
+                }
+            }
+
+        }
+        .secondBlock{
+            display: flex;
+            justify-content: space-between;
+
+            .processTab{
+                display: flex;
+                align-items: flex-start;
+                font-size: 18px;
+                font-weight: 500;
+                color:var(--f_blue-500);
+
+                .processBtn{
+                    padding: 8px 12px;
+                    border-radius: 12px;
+                    
+
+                }
+                .processBtn_selected{
+                    background: var(--f_gray-50);
+                    color: var(--f_accent);
+
+                }
+            }
+
+            .filterBlock{
+                display: flex;
+                
+                gap: 8px;
+
+                input{
+                    width: 307px;
+                    line-height: 137%;
+                    font-size: 16px;
+                }
+
+                .filterBtn{
+                    position: relative;// ТУТ МЕНЮ С КОМПОНЕНТА
+                    background: var(--f_gray-50);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 19.88px 18.10px;
+                    border-radius: 8px;
+                    cursor: pointer;
+                    
+                }
+            }
+        }
+
+    }
+
+    .orderContent{
+        flex: 1;
+        
+        position: relative;
+
+        .notFound{
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+
+            .createOrderBtn{
+                color: var(--background);
+                padding: 11.5px 34.5px;
+                background: var(--f_accent);
+                border-radius: 40px;
+                cursor: pointer;
+            }
+        }
+        
+    }
+    
+}
+
+.filterMenuWrap{
+    width: 411px;
+    z-index: 1;
+    background: var(--background);
+    
+    border-radius: 8px;
+    padding: 20px;
+    
+    position: absolute;
+    bottom: -8px;
+    right: 0px;
+    transform: translateY(100%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 2 16 #0E275D0D;
+
+    .itemBox{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        .help{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            .title{
+                color: var(--f_blue-500);
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 135%;
+            }
+        }
+        input{
+            width: 100% !important;
+        }
+    }
+
+    .buttonsBox{
+        display: flex;
+        gap: 16px;
+
+        &>*{
+            border: 1px solid var(--f_blue-500);
+            padding: 11.5px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            font-size: 16px;
+            color: var(--f_blue-500);
+            cursor: pointer;
+        }
+        &>:first-child{
+            background: var(--f_accent);
+            color: var(--background);
+            border: 0;
+        }
+    }
+}
+
+.createOrderWrap{   
+    flex: 1;
+    z-index: 2;
+
+    .topMenu{
+        display: flex;
+        flex-direction: column;
+        gap: 56px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid #CDD2DE;
+
+        .backBtn{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+        }
+
+        .mainText{
+                font-size: 40px;
+                line-height: 105%;
+                letter-spacing: -3%;
+                font-weight: 600;
+                color: var(--f_blue-950);
+        }
+
+    }
+    .orderContent{        
+        max-width: 884px;        
+        flex: 1;        
+        position: relative;
+        padding: 32px 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+
+        .busBlock{
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 10px;
+        }
+
+        .orderFieldsBlock{
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            color: var(--f_blue-500);
+            
+
+            .fieldItem{
+                display: flex;
+                flex-direction: column;
+                gap: 9px;
+                .helpBlock{
+                    display: flex;
+                    gap: 8px;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 135%;
+
+                    span{
+                        color: var(--f_accent);
+                    }
+                }
+                input{
+                    width: 100%;
+                }
+            }
+
+            .delBoxBlock{
+                display: flex;
+                flex-direction: column;
+                gap: 17px;
+                .checkBlock{
+                    display: flex;
+                    gap: 16px;
+                }
+                .help{
+                    color: var(--f_accent);
+                }
+            }
+
+
+
+            .line{
+                border-bottom: 1px solid #CDD2DE;                
+            }
+            
+        }
+        .addOrderBtn{
+            align-self: flex-start;            
+            display: flex;
+            gap: 8px;            
+            
+            .text{
+                font-weight: 600;
+                font-size: 16px;
+                line-height: 130%;
+                color: var(--f_accent);
+            }
+        }
+
+        .nextStepBtn{
+            align-self: flex-start;
+            font-weight: 600;
+            font-size: 21px;
+            line-height: 130%;
+            letter-spacing: -2%;
+            color: var(--background);
+            background: var(--f_accent);
+            padding: 18.5px 50.5px;
+            border-radius: 40px;
+            cursor: pointer;
+        }
+    }
+    
+}
+.paramsBlock{
+   display: flex;
+   gap: 24px;
+
+   .leftBlock{
+   width: 100%;   
+   display: flex;   
+   flex-direction: column;    
+   gap: 24px;           
+   }
+   .rightBlock{
+   width: 100%;     
+    display: flex;   
+   flex-direction: column;    
+   gap: 24px;                  
+   }
+}

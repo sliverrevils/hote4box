@@ -1,0 +1,47 @@
+.formAuth{
+   
+    
+    display: flex;
+    flex-direction: column;
+    gap: 24px;   
+
+    .infoBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+       
+
+        .text{
+            font-size: var(--h1_size-32x21x18x18);
+            font-weight:600;
+            
+            
+            
+        }
+
+        .infoHelp{
+            font-size: var(--f_link-size);
+
+            a{
+                color: var(--f_accent);                
+            }            
+        }
+    }
+
+    .passBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        a{
+            font-size: var(--f_link-size),
+        }
+    }
+
+    button{
+        background: var(--f_accent);
+        color: var(--f_white-100);
+        width: 80%;
+    }
+}

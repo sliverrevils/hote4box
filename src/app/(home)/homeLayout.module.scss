@@ -1,0 +1,30 @@
+.homeLayoutWrap{
+    // border: 3px solid green;
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    flex-direction: column;
+   
+
+    header{
+        padding: 10px var(--containerMarginBig);
+        
+    }
+    main{
+        flex: 1;
+        
+    }
+    footer{
+        padding: 10px var(--containerMarginBig);
+        // border: 1px solid goldenrod;
+    }
+}
+
+
+@media (min-width: 1920px) {
+   
+  .homeLayoutWrap {   
+    
+    max-width: 1920px;   
+  }
+}
