@@ -12,9 +12,9 @@ export default function Home() {
                         <div className={styles.firstLine}>
                             <div className={styles.infoBlock}>
                                 <div className={styles.firstTextBlock}>
-                                    <div>Лучший способ получить</div>
+                                    <h1>Лучший способ получить</h1>
                                     <div>
-                                        <div>международную</div>
+                                        <h1>международную</h1>
                                         <Image
                                             src={"/main/svg/web.svg"}
                                             width={50}
@@ -23,7 +23,7 @@ export default function Home() {
                                         />
                                     </div>
                                     <div>
-                                        <div>посылку</div>
+                                        <h1>посылку</h1>
                                         <Image
                                             src={"/temp/people.png"}
                                             width={104}
@@ -79,7 +79,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <div>Шаг 1</div>
-                                <div>Выбор товаров</div>
+                                <h4>Выбор товаров</h4>
                                 <div>
                                     Товары в любом интернет- магазине и отправьте их в одно из наших
                                     отделений.
@@ -92,7 +92,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <div>Шаг 2</div>
-                                <div>Поступление товара</div>
+                                <h4>Поступление товара</h4>
                                 <div>
                                     После получения товара мы проверим его содержимое и вышлем вам
                                     счет на доставку.
@@ -105,7 +105,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <div>Шаг 3</div>
-                                <div>Оплата доставки</div>
+                                <h4>Оплата доставки</h4>
                                 <div>
                                     Оплатите счет за доставку в вашем личном кабинете Hotel4box, и
                                     мы отправим посылку
@@ -118,7 +118,7 @@ export default function Home() {
                             </div>
                             <div>
                                 <div>Шаг 4</div>
-                                <div>Получение посылки</div>
+                                <h4>Получение посылки</h4>
                                 <div>
                                     Мы доставим посылку до двери клиента или в наш пункт выдачи.
                                 </div>
@@ -307,6 +307,159 @@ export default function Home() {
                 <div className={styles.commsPock}>
                     <h2 className={styles.title}>Отзывы</h2>
                     <div className={styles.commsList}>
+                        <div className={styles.commItem}>
+                            <div className={styles.comtopBlock}>
+                                <div className={styles.starsBlock}>
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                </div>
+                                <Image
+                                    src={"/temp/comm1.png"}
+                                    width={280}
+                                    height={136}
+                                    alt="comm"
+                                />
+                            </div>
+                            <div className={styles.combottomBlock}>
+                                <h4>Отзыв</h4>
+                                <div>
+                                    Какое удовольствие получать эти коробки! И конечно же вы знаете,
+                                    что внутри, но вы все равно открываете их как рождественский
+                                    подарок. Доставили быстро. И хорошо упаковано. Спасибо,
+                                    hotel4box!
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.commItem}>
+                            <div className={styles.comtopBlock}>
+                                <div className={styles.starsBlock}>
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                </div>
+                                <Image
+                                    src={"/temp/comm1.png"}
+                                    width={280}
+                                    height={136}
+                                    alt="comm"
+                                />
+                            </div>
+                            <div className={styles.combottomBlock}>
+                                <h4>Отзыв</h4>
+                                <div>
+                                    Какое удовольствие получать эти коробки! И конечно же вы знаете,
+                                    что внутри, но вы все равно открываете их как рождественский
+                                    подарок. Доставили быстро. И хорошо упаковано. Спасибо,
+                                    hotel4box!
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.commItem}>
+                            <div className={styles.comtopBlock}>
+                                <div className={styles.starsBlock}>
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                    <Image
+                                        src={"/common/star_blue.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="star"
+                                    />
+                                </div>
+                                <Image
+                                    src={"/temp/comm1.png"}
+                                    width={280}
+                                    height={136}
+                                    alt="comm"
+                                />
+                            </div>
+                            <div className={styles.combottomBlock}>
+                                <h4>Отзыв</h4>
+                                <div>
+                                    Какое удовольствие получать эти коробки! И конечно же вы знаете,
+                                    что внутри, но вы все равно открываете их как рождественский
+                                    подарок. Доставили быстро. И хорошо упаковано. Спасибо,
+                                    hotel4box!
+                                </div>
+                            </div>
+                        </div>
                         <div className={styles.commItem}>
                             <div className={styles.comtopBlock}>
                                 <div className={styles.starsBlock}>

@@ -97,12 +97,14 @@
 
     .stepsListBlock{
         display: flex;
-        gap: 24px;
-        .stepItem{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // gap: 24px;
+        .stepItem{            
             height: 544px;
-            padding: 48px;
-            border-radius: 48px;
-            width: 25%;
+            padding: var(--padding-48x32x24x20);
+            border-radius: var(--radius_box_big-48x32x24x16);
+            width: 24%;
             background: var(--f_gray-50);
             display: flex;
             flex-direction: column;
@@ -124,13 +126,13 @@
                     color: var(--f_blue-500);
                     
                 }
-                &>:nth-child(2){
-                    font-size: 32px;
-                    font-weight: 600;
-                    color: var(--f_blue-950);
-                    letter-spacing: -2px;
+                // &>:nth-child(2){
+                //     font-size: 32px;
+                //     font-weight: 600;
+                //     color: var(--f_blue-950);
+                //     letter-spacing: -2px;
                     
-                }
+                // }
                 &>:nth-child(3){
                     font-size: 21px;
                     font-weight: 400;
@@ -141,7 +143,12 @@
                 }
                 
             }
+            @media(max-width:1280px){
+                height: 368px;
+                max-width: 50%;
+            }
         }
+       
 
     }
 
@@ -208,7 +215,10 @@
     }
     .cardsBlock1{
         display: flex;
-        gap: 24px;        
+        gap: 24px; 
+        @media(max-width:768px){
+            flex-direction: column;
+        }       
 
         .leftBlock{
             width: 100%;             
@@ -404,8 +414,8 @@
         
         .commItem{
             background: var(--f_gray-50);
-            padding: 48px;
-            border-radius: 48px;           
+            padding: var(--padding-48x32x24x20);
+            border-radius:var(--radius_box_big-48x32x24x16);           
             width: 100%;
             max-width: 49%;
             display: flex;
@@ -425,6 +435,9 @@
                 flex-direction: column;
                 gap: 24px;               
             }
+            @media(max-width:768px){
+            max-width: 100%;
+         }
         }
     }
 }
@@ -468,6 +481,14 @@
             cursor: pointer;
         }
     }
+    }
+    @media(max-width: 768px){
+        flex-direction: column;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
     }
 
 

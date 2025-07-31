@@ -30,6 +30,7 @@
   --containerMarginSmall:40px;
 
   --padding-64x32x20x17:64px;
+  --padding-48x32x24x20:48px;
   --input_padding-16x13x12x12:16px;
   --button_padding-18x13x11x11:18.5px;
 
@@ -191,6 +192,7 @@ h5{
     --radius_box_big-48x32x24x16:16px;
     --h1_weight:600;
     --container_width-1920x1280x768x360:360px;
+    --padding-48x32x24x20:20px;
       
   }
 h1{
@@ -254,6 +256,7 @@ h5{
     --radius_box_big-48x32x24x16:24px;
     --h1_weight:600;
     --container_width-1920x1280x768x360:1280px;
+    --padding-48x32x24x20:24px;
       
   }
 h1{  
@@ -315,6 +318,7 @@ h5{
     --radius_box_big-48x32x24x16:24px;
     --h1_weight:600;
     --container_width-1920x1280x768x360:1280px;
+    --padding-48x32x24x20:32px;
       
   }
 h1{
@@ -382,7 +386,8 @@ h5{
     --radius_box-32x24x24x16:32px;
     --radius_box_big-48x32x24x16:48px;
     --h1_weight:600;
-     --container_width-1920x1280x768x360:1920px;     
+    --container_width-1920x1280x768x360:1920px;
+    --padding-48x32x24x20:48px;     
   }
   h1{
     
