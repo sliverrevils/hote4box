@@ -8,6 +8,8 @@ interface IUser {
     phone: string;
     role: IUserRole;
     balance: number;
+    stripeCustomerId: string;
+    savedCards: string[];
 }
 
 type IUserInfo = Omit<IUser, "password">;

@@ -41,6 +41,8 @@
   --h1_weight:600;
   --container_width-1920x1280x768x360:1920px;
 
+  --sizing-24x16x16x16:24px;
+
  
   
 }
@@ -168,6 +170,7 @@ h5{
     --radius_box_big-48x32x24x16:16px;
     --h1_weight:600;
      --container_width-1920x1280x768x360:360px;
+     --sizing-24x16x16x16:16px;
   }
 
 
@@ -193,6 +196,7 @@ h5{
     --h1_weight:600;
     --container_width-1920x1280x768x360:360px;
     --padding-48x32x24x20:20px;
+    --sizing-24x16x16x16:16px;
       
   }
 h1{
@@ -257,6 +261,7 @@ h5{
     --h1_weight:600;
     --container_width-1920x1280x768x360:1280px;
     --padding-48x32x24x20:24px;
+    --sizing-24x16x16x16:16px;
       
   }
 h1{  
@@ -319,6 +324,7 @@ h5{
     --h1_weight:600;
     --container_width-1920x1280x768x360:1280px;
     --padding-48x32x24x20:32px;
+    --sizing-24x16x16x16:16px;
       
   }
 h1{
@@ -387,7 +393,8 @@ h5{
     --radius_box_big-48x32x24x16:48px;
     --h1_weight:600;
     --container_width-1920x1280x768x360:1920px;
-    --padding-48x32x24x20:48px;     
+    --padding-48x32x24x20:48px;   
+    --sizing-24x16x16x16:24px;  
   }
   h1{
     

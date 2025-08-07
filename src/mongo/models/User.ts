@@ -8,6 +8,8 @@ const userSchema = new Schema<IUser>(
         phone: { type: String, required: true, unique: true },
         role: { type: String, enum: ["user", "admin"], default: "user" },
         balance: { type: Number, required: true },
+        stripeCustomerId: { type: String },
+        savedCards: [{ type: String }],
     },
     {
         timestamps: true,

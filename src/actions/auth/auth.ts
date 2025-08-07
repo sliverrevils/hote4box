@@ -6,6 +6,9 @@ import { connectDB } from "@/mongo/mongoose";
 import bcrypt from "bcryptjs";
 import { cookies } from "next/headers";
 import { isValidPhoneNumber, parsePhoneNumberWithError } from "libphonenumber-js";
+import Stripe from "stripe";
+
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!);
 
 export async function registerUser(formData: FormData) {
     await connectDB();
@@ -36,6 +39,13 @@ export async function registerUser(formData: FormData) {
 
     const hashedPassword = await bcrypt.hash(password, 10);
 
+    // 👉 создаём Stripe Customer
+    const customer = await stripe.customers.create({
+        name,
+        email,
+        phone,
+    });
+
     await User.create({
         name,
         email,
@@ -43,6 +53,7 @@ export async function registerUser(formData: FormData) {
         role,
         phone: phoneNum.number,
         balance: 0.0,
+        stripeCustomerId: customer.id,
     });
 }
 

@@ -39,6 +39,7 @@ export default function Home() {
                                 </div>
                             </div>
                             <Image
+                                className={styles.imgBlock}
                                 src={"/main/box.png"}
                                 width={672}
                                 height={452}
@@ -47,16 +48,24 @@ export default function Home() {
                             />
                         </div>
                         <div className={styles.secondLine}>
-                            <Box className={styles.box1}>
-                                <div>Рассчитать стоимость доставки</div>
-                                <div>
+                            <Box className={styles.boxLeft}>
+                                <h4>Рассчитать стоимость доставки</h4>
+                                <div className={styles.deliveryFrom}>
                                     <input placeholder="Из Россия" />
+                                    <Image
+                                        src={"/common/arrow-right.svg"}
+                                        width={24}
+                                        height={24}
+                                        alt="arrow-right.svg"
+                                    />
                                     <input placeholder="В Монголия" />
                                 </div>
-                                <div>Получить расчёт</div>
+                                <button className={styles.getCalcBtn}>Получить расчёт</button>
                             </Box>
-                            <Box>
-                                <div>Отследить посылку</div>
+                            <Box className={styles.boxRight}>
+                                <h4>Отследить посылку</h4>
+                                <input placeholder="Трек-номер" />
+                                <button>Отследить</button>
                             </Box>
                         </div>
                     </div>

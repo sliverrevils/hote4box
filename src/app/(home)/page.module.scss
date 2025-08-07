@@ -23,14 +23,12 @@
         justify-content: space-between;
         font-size: 56px;
         font-weight: 600;
-         letter-spacing: -2px;
-        
+        letter-spacing: -2px;        
 
         .infoBlock{
             display: flex;
             flex-direction: column;
-            gap: 32px;
-            
+            gap: 32px;            
 
             .firstTextBlock{                
                 display: flex;
@@ -38,15 +36,11 @@
                 
                 &>:nth-child(2){                    
                     display: flex;
-                    align-items: center;
-                    
+                    align-items: center;                    
                 }
                 &>:nth-child(3){                    
                     display: flex;
-                    align-items: center;
-                    
-                   
-                    
+                    align-items: center;                
                 }
             }
 
@@ -56,7 +50,16 @@
                 font-size: 21px;
                 font-weight: 400;
                 color: var(--f_blue-500);
-                 letter-spacing: -0px;
+                letter-spacing: -0px;
+
+            }
+            
+        }
+
+        .imgBlock{
+
+            @media(max-width:768px){
+                display: none;
             }
             
         }
@@ -65,7 +68,42 @@
     }
     .secondLine{
         display: flex;
+        flex-direction: row;
         gap: 24px;
+        .boxLeft{           
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+            .deliveryFrom{               
+                display: flex;
+                align-items: center;
+                input{
+                    width: 100%;
+                }
+            } 
+            
+            button{
+                align-self: flex-start;
+                background: var(--f_accent);
+                color: var(--background);
+            }
+        }
+
+        .boxRight{
+           
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            button{
+                align-self: flex-start;
+            }
+            
+        }
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
 
     }
 }
@@ -99,12 +137,16 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        gap: var(--sizing-24x16x16x16);
         // gap: 24px;
-        .stepItem{            
+        .stepItem{  
+            flex: 1 0;          
             height: 544px;
             padding: var(--padding-48x32x24x20);
             border-radius: var(--radius_box_big-48x32x24x16);
-            width: 24%;
+            
+            min-width: 276px;
+            max-width: 100%;
             background: var(--f_gray-50);
             display: flex;
             flex-direction: column;
@@ -182,13 +224,11 @@
 
     .shopsBlock{
         display: flex;
-        justify-content: flex-start;
-        
+        justify-content: flex-start; 
         
         flex-wrap: wrap;
         gap: 24px;
-        &>*{
-            
+        &>*{            
             background: var(--f_gray-50);
             padding: 10px;
             border-radius: 48px;
@@ -202,7 +242,7 @@
 .advantagesBlock{
     display: flex;
     flex-direction: column;
-    gap: 56px;
+    gap: var(--sizing-24x16x16x16);
 
     .title{
         font-size: 48px;
@@ -215,7 +255,7 @@
     }
     .cardsBlock1{
         display: flex;
-        gap: 24px; 
+        gap: var(--sizing-24x16x16x16); 
         @media(max-width:768px){
             flex-direction: column;
         }       
@@ -262,7 +302,7 @@
                 &>:nth-child(2){
                     display: flex;
                     flex-direction: column;
-                    gap: 24px;
+                    gap: var(--sizing-24x16x16x16);
                     &>:nth-child(1){
                         font-size: 32px;
                         font-weight: 600;
@@ -281,7 +321,7 @@
     }
     .cardsBlock2{
         display: flex;
-        gap: 24px;   
+        gap: var(--sizing-24x16x16x16);   
         position: relative;     
 
 
@@ -354,13 +394,15 @@
                 }
             }             
             .second{
-               
+                position: relative;
+                overflow: hidden;
+                
                 height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
                 max-height: 448px;
-                overflow: hidden;
+                
                
 
                 &>:nth-child(1){
@@ -481,6 +523,13 @@
             cursor: pointer;
         }
     }
+    }
+
+    img{
+        width: 50%;
+        height: auto;
+        
+        
     }
     @media(max-width: 768px){
         flex-direction: column;
