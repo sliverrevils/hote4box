@@ -1,14 +1,6 @@
-1. подключаем базу
-2. создаем модель пользователя
-3. создаем кастомную авторизация через jose
-4. делаем регистрацию и авторизацию
-5. создаем защищенные роуты
+.env
 
-npm install mongoose bcryptjs jose
+STRIPE*SECRET_KEY=sk_test*...
+STRIPE*PUBLISHABLE_KEY=pk_test*...
 
-# User
-
-name
-email
-phone
-password
+NEXT*PUBLIC_STRIPE_PUBLISHABLE_KEY=pk_test*...
