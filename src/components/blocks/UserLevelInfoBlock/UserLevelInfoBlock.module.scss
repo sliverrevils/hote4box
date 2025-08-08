@@ -1,0 +1,48 @@
+.UserLevelInfoBlockWrap{
+    
+    border-radius: var(--radius_box_big-48x32x24x16);
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    .infoBlock{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .linePath{
+            position: absolute;
+            border: 1px solid black;
+            top: calc(var(--radius_box_big-48x32x24x16) + 11px);
+            bottom: 0;
+            left: calc(var(--radius_box_big-48x32x24x16) + 11px);
+            
+        }
+
+        .lineLevel{
+            display: flex;
+            gap: var(--radius_box_big-48x32x24x16);
+            padding: var(--radius_box_big-48x32x24x16);
+
+            .pointIco{
+                z-index: 1;
+            }
+
+            .infoLevel{
+                display: flex;
+                flex-direction: column;
+                gap: var(--sizing-24x16x16x16);
+
+                .aboutLevel{
+                    line-height: 135%;
+                    font-size: 16px;
+                    font-weight: 400;
+                    max-width: 489px;
+                }
+            }
+        }
+    }
+    
+}

@@ -1,7 +1,10 @@
+import { HistoryBalsTable } from "@/components/tables/HistoryBals/HistoryBals";
+import { mockPointsData } from "@/shared/constants/historyBalsMock";
+
 export default function HistoryProfile() {
     return (
         <div>
-            <h1>HistoryProfile</h1>
+            <HistoryBalsTable data={mockPointsData} />
         </div>
     );
 }

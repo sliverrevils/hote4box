@@ -1,0 +1,61 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  font-family: inherit;
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+/* Variants */
+.default {
+  background-color: #2563eb; // синий
+  color: white;
+
+  &:hover:not(:disabled) {
+    background-color: #1e40af;
+  }
+}
+
+.destructive {
+  background-color: #dc2626; // красный
+  color: white;
+
+  &:hover:not(:disabled) {
+    background-color: #b91c1c;
+  }
+}
+
+.outline {
+  background-color: white;
+  border: 1px solid #d1d5db;
+  color: #111827;
+
+  &:hover:not(:disabled) {
+    background-color: #f9fafb;
+  }
+}
+
+/* Sizes */
+.sm {
+  padding: 4px 12px;
+  font-size: 14px;
+}
+
+.md {
+  padding: 8px 16px;
+  font-size: 15px;
+}
+
+.lg {
+  padding: 12px 20px;
+  font-size: 16px;
+}

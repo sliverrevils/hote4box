@@ -35,3 +35,42 @@ export async function addCardToUser(
 
     return { success: true, message: "Карта успешно добавлена" };
 }
+
+export async function getSavedCards() {
+    await connectDB();
+    const user = await getCurrentUser();
+    if (!user) return [];
+
+    const foundUser = await User.findById(user.userId);
+
+    const cardDetails = await Promise.all(
+        foundUser.savedCards.map(async (paymentMethodId: string) => {
+            const pm = await stripe.paymentMethods.retrieve(paymentMethodId);
+            return {
+                id: pm.id,
+                brand: pm.card?.brand,
+                last4: pm.card?.last4,
+                expMonth: pm.card?.exp_month,
+                expYear: pm.card?.exp_year,
+            };
+        })
+    );
+
+    return cardDetails;
+}
+
+export async function deleteCard(paymentMethodId: string) {
+    await connectDB();
+    const user = await getCurrentUser();
+    if (!user) throw new Error("Not authenticated");
+
+    const foundUser = await User.findById(user.userId);
+
+    // 1. Удаляем карту из Stripe customer
+    await stripe.paymentMethods.detach(paymentMethodId);
+
+    // 2. Удаляем карту из MongoDB
+    foundUser.savedCards = foundUser.savedCards.filter((id: string) => id !== paymentMethodId);
+
+    await foundUser.save();
+}
